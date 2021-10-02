@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}سعید غلامی - بلاگ{% endblock %}
+{% block content %}
+<section class="post_list">
+  <h1>لیست پست‌ها</h1>
+  {% for post in posts %}
+  <a href="#">{{ post.title }}</a><br>
+  {% endfor %}
+</section>
+{% endblock %}
